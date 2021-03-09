@@ -4,6 +4,8 @@ body{
   margin: 0;
   padding: 0;
   font-size: 16pt; 
+  font-family: "Raleway", sans-serif;
+  background-image: url("../images/concrete_seamless.png");
 }
 
 /*Requirement 2*/
@@ -11,12 +13,17 @@ header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
   /*Your  code here again.*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
 }
 
 /*Requirement 3*/
 .nav_links{
   /*Your code here again.*/
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -24,6 +31,8 @@ header{
 .price{
     min-height: 500px;
     /*Your code here*/
+    display: flex;
+    flex-direction: column;
     /*You must use flex.
     /*Don't forget to vertically and horizontally 
     align the element*/
@@ -37,64 +46,91 @@ header{
   padding: 0 0 50px 0;
   /*Your code here.*/
   /*Take a look at flex-basis*/
+  flex-basis: 400px;
+  flex-direction: column;
 
 }
 
 /*Requirement 6*/
-/**  UNCOMMENT THIS CODE ONCE YOU
-/**  HAVE THE SELECTOR
-{
+div.package > header {
   background: #288080;
   border: 2px solid #45ADAD;
   padding: 20px 0;
   border-radius: 7px 7px 0 0;
-}*/
+}
 
 
 /*Requirement 7*/
 .gallery{
   min-height: 600px;
   /*Your code here again.*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
 }
 
 /*Requirement 8*/
-/**  UNCOMMENT THIS CODE ONCE YOU
-/**  HAVE THE SELECTOR
+div.gallery > img
 {
   border: 10px #50C7C7 solid;
   margin: 10px;
   width: 300px;
 }
-*/
+
 
 /*Requirement 9*/
 #logo{
    /*Your code here.*/
- 
+   animation-duration: 15s;
+   animation-name: logo_grow;
+  
 }
 
 /*Keyframes for animation*/
-@-webkit-keyframes logo_grow{
+@-webkit-keyframes logo_grow {
   /*Your code here.*/
+  from {
+    width: 25px;
+    opacity: 0;
+  }
+  to {
+    width: 420px;
+    opacity: 1;
+  }
+  
 
 }
 
 @keyframes logo_grow{
   /*Your code here.*/
-
+  from {
+    width: 25px;
+    opacity: 0;
+  }
+  to {
+    width: 420px;
+    opacity: 1;
+  }
 } 
 
 @media screen and (min-width: 850px){
 
   /*Requirement 10*/
   header{
-    /*Your code here again.*/  
+    /*Your code here again.*/
+    display: flex;  
+    justify-content: flex-start;
+    align-items: center;
   }
 
   /*Requirement 10*/
   .nav_links{
     /*Your code here again.*/  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
   }
 
   /*Requirement 11*/
