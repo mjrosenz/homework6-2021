@@ -86,8 +86,8 @@ div.gallery > img
 /*Requirement 9*/
 #logo{
    /*Your code here.*/
-   animation-duration: 15s;
    animation-name: logo_grow;
+   animation-duration: 15s;
   
 }
 
